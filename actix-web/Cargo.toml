@@ -5,4 +5,5 @@ authors = ["Robert Collins <robertc@robertcollins.net>"]
 
 [dependencies]
 actix = "0.4"
-actix-web = "0.3"
+actix-web = { version="0.3.3", features=["alpn"] }
+openssl = { version="0.10", features = ["v110"] }
