@@ -1,3 +1,12 @@
+# TOP policy simulator. Maybe.
+
+https://www.top.org.nz/top1 is a mess. Folk that already get it like it. Everyone else hates it, and many folk think they are wealthier than they are. The policy document is waffle: it has no concrete figures, so its impossible to assess.
+
+But maybe we can at least make something people can play with.
+
+https://www.top.org.nz/top_s_policy_to_make_new_zealand_fair_again_some_numbers has some actual numbers.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

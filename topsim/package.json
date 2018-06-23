@@ -2,8 +2,10 @@
   "name": "topsim",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://s3-ap-southeast-2.amazonaws.com/rbtcollins-experiments/topsim/",
   "dependencies": {
     "jshint": "^2.9.5",
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"

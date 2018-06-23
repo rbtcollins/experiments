@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Inputs } from './Inputs';
+import { Results } from './Results';
 
 class App extends Component {
   render () {
@@ -14,7 +15,9 @@ class App extends Component {
         <p className="App-intro">
           edit <code>src/App.js</code> .
         </p>
+        <Results/>
         <Inputs/>
+
       </div>
     );
   }
