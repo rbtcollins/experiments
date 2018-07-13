@@ -64,20 +64,17 @@ function afterTax (grossIncome, assets, taxProfile) {
 }
 
 function bracketedTax (amount, brackets) {
-  // TODO handle unsorted brackets
   let tax;
   let remainder;
   let bracket;
   tax = 0;
   remainder = amount;
+  // Copy brackets and sort by threshold (descending order)
+  brackets = brackets.slice().sort(function(a, b) {return b.threshold - a.threshold;})
   for (bracket of brackets) {
-    if (amount < bracket.threshold) {
-      break;
-    } else {
-      const bracketAmount = remainder * bracket.rate;
-      tax += bracketAmount;
-      remainder -= bracketAmount;
-    }
+    const bracketAmount = Math.max(0, remainder - bracket.threshold)* bracket.rate;
+    tax += bracketAmount;
+    remainder = Math.min(remainder, bracket.threshold);
   }
   return tax;
 }
