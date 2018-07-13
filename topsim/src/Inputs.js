@@ -21,16 +21,16 @@ export class Inputs extends React.Component {
         name: 'NZ current tax',
         assetTax: 0,
         incomeTax: [{
-          threshold: 14000,
+          threshold: 0,
           rate: 0.105
         }, {
-          threshold: 48000,
+          threshold: 14000,
           rate: 0.175
         }, {
-          threshold: 70000,
+          threshold: 48000,
           rate: 0.3
         }, {
-          threshold: 'None',
+          threshold: 70000,
           rate: 0.33
         }],
         immutable: true
@@ -39,16 +39,16 @@ export class Inputs extends React.Component {
         name: 'NZ Top1 Proposal',
         assetTax: 0.015,
         incomeTax: [{
-          threshold: 14000,
+          threshold: 0,
           rate: 0.025
         }, {
-          threshold: 48000,
+          threshold: 14000,
           rate: 0.095
         }, {
-          threshold: 70000,
+          threshold: 48000,
           rate: 0.22
         }, {
-          threshold: 'None',
+          threshold: 70000,
           rate: 0.25
         }],
         immutable: true
